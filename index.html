@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- ICS2O Programming Assign-03-HTML-CosineLawCalculator -->
+<html>
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="description" content="Cosine Law Calculator, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Shyla Oommen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="/fav_index/site.webmanifest">
+    <!-- Style Sheet and Google's MDL -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cosine Law Calculator, with JavaScript</title>
+  </head>
+  <body>
+    <!-- To use Google's MDL + Path to JS File -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Header -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Finding the Angle/Side of a Triangle, with Cosine Law</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <table>
+          <tr>
+            <th>
+              <center>
+              <h5>This program can calculate a side or angle of a triangle, given the other sides (and the corresponding side/angle to what you’re looking for). Keep in mind the capitalization and that we will be solving for side c or angle C.</h5><img src="./images/cosinelaw_side.png" alt="Cosine Law Formula, for side c" width="50%" height="auto"><img src="./images/cosine_angle.png" alt="Cosine Law Formula, for angle C" width="50%" height="auto">
+              </center>
+            </th>
+          </tr>
+        </table>
+        <!-- Solving a side -->
+        <h5>Solving for side c (cm):</h5>
+        <!-- Numerical Text Field for side a -->
+        <form action="#">
+          <p>Enter side a (cm):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="side-a"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="side-a">Eg. 5...</label>
+          </div>
+        </form>
+        <!-- Numerical Text Field for side b -->
+        <form action="#">
+          <p>Enter side b (cm):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="side-b"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="side-b">Eg. 5...</label>
+          </div>
+        </form>
+        <!-- Numerical Text Field for angle C -->
+        <form action="#">
+          <p>Enter angle C (deg):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="angle-c"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="angle-c">Eg. 75...</label>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <center>
+          <br>
+          <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculateSideC()"
+        >
+          Calculate
+          </button>
+        </center>
+        <br />
+        <p>
+          <div id="answers-side">
+            <div id="side-c-ans"></div>
+          </div>
+        </p>
+        <!-- Solving an angle -->
+        <h5>Solving for angle C (deg):</h5>
+        <!-- Numerical Text Field for side a -->
+        <form action="#">
+          <p>Enter side a (cm):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="side-a-ang"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="side-a-ang">Eg. 5...</label>
+          </div>
+        </form>
+        <!-- Numerical Text Field for side b -->
+        <form action="#">
+          <p>Enter side b (cm):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="side-b-ang"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="side-b-ang">Eg. 5...</label>
+          </div>
+        </form>
+        <!-- Numerical Text Field for side c -->
+        <form action="#">
+          <p>Enter side c (cm):</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="side-c"
+              step="0.001"
+            />
+            <label class="mdl-textfield__label" for="side-c">Eg. 5...</label>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <center>
+          <br>
+          <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculateAngleC()"
+        >
+          Calculate
+          </button>
+        </center>
+        <br />
+        <p>
+          <div id="answers-angle">
+            <div id="angle-c-ans"></div>
+          </div>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
