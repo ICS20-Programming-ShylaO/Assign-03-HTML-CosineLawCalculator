@@ -1,0 +1,58 @@
+/* Created by: Shyla Oommen
+* Created on: Mar 2023
+* This CSS file defines the style for index.html
+* ICS2O-Programming-Assign-03-HTML-CosineLawCalculato
+*/
+
+body {
+  background-color: #f8bd9e;
+}
+
+h5 {
+  background-color: #f6a3cf;
+  text-align: center;
+  border: 2px solid #c65ec2;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+p {
+  background-color: #f6a3cf;
+  border: 2px solid #c65ec2;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+}
+
+form {
+  border: 2px solid #c65ec2;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+}
+
+#answers {
+  border: 2px solid #c65ec2;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+}
+
+img {
+  float: right;
+}

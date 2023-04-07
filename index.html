@@ -51,6 +51,7 @@
               type="number"
               id="side-a"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="side-a">Eg. 5...</label>
           </div>
@@ -64,6 +65,7 @@
               type="number"
               id="side-b"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="side-b">Eg. 5...</label>
           </div>
@@ -77,6 +79,7 @@
               type="number"
               id="angle-c"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="angle-c">Eg. 75...</label>
           </div>
@@ -86,16 +89,13 @@
           <br>
           <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateSideC()"
-        >
+          onclick="calculateSideC()">
           Calculate
           </button>
         </center>
         <br />
         <p>
-          <div id="answers-side">
-            <div id="side-c-ans"></div>
-          </div>
+        <div id="side-c-ans"></div>
         </p>
         <!-- Solving an angle -->
         <h5>Solving for angle C (deg):</h5>
@@ -108,6 +108,7 @@
               type="number"
               id="side-a-ang"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="side-a-ang">Eg. 5...</label>
           </div>
@@ -121,6 +122,7 @@
               type="number"
               id="side-b-ang"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="side-b-ang">Eg. 5...</label>
           </div>
@@ -134,6 +136,7 @@
               type="number"
               id="side-c"
               step="0.001"
+              min="0"
             />
             <label class="mdl-textfield__label" for="side-c">Eg. 5...</label>
           </div>
@@ -143,16 +146,13 @@
           <br>
           <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateAngleC()"
-        >
+          onclick="calculateAngleC()">
           Calculate
           </button>
         </center>
         <br />
         <p>
-          <div id="answers-angle">
-            <div id="angle-c-ans"></div>
-          </div>
+        <div id="angle-c-ans"></div>
         </p>
       </main>
     </div>
