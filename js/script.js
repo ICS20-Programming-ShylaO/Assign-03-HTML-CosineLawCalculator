@@ -12,11 +12,12 @@ function calculateSideC () {
   // input
   let sideA = parseFloat(document.getElementById('side-a').value);
   let sideB = parseFloat(document.getElementById('side-b').value);
-  let cosC = parseFloat(document.getElementById('side-c').value) * Math.cos;
+  let cosC = parseFloat(document.getElementById('angle-c').value) * Math.cos (1);
   
   // process
-  let side = (fahrenheit - 32) * 5.0/9.0;
+  let side-c-sqrd = sideA ** 2 + sideB ** 2 - 2 * sideA * sideB * cosC;
+  let side-c-ans = Math.sqrt(side-c-sqrd);
 
   // output
-  document.getElementById('celsius').innerHTML = "A temperature of " + fahrenheit + " °F is " + celsius.toFixed(1) + " °C."
+  document.getElementById('side-c-ans').innerHTML = "Side c is about" + side-c-ans.toFixed(2) + " cm." 
 }
