@@ -15,7 +15,7 @@ function calculateSideC () {
   let angleC = parseFloat(document.getElementById('angle-c').value);
   
   // process
-  let sideCAns = Math.sqrt(Math.pow (sideA, 2) + Math.pow (sideB, 2) * -2 * sideA * sideB * Math.cos (angleC))
+  let sideCAns = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2) - 2 * sideA * sideB * Math.cos(angleC))
 
   // output
   document.getElementById('side-c-ans').innerHTML = "Side c is about " + sideCAns.toFixed(2) + " cm." 
@@ -28,8 +28,8 @@ function calculateAngleC () {
   let sideC = parseFloat(document.getElementById('side-c').value);
 
   //process
-  let AngleCAns = ((sideAAng ** 2 + sideBAng ** 2 - sideC ** 2)/2 * sideAAng * sideBAng)/Math.cos(1);
+  let AngleCAns = ((sideAAng ** 2 + sideBAng ** 2 - sideC ** 2)/(2 * sideAAng * sideBAng))/Math.cos(1);
 
   //output
-  document.getElementById('angle-c-ans').innerHTML = "Angle C is about " + AngleCAns.toFixed(2) + " °."
+  document.getElementById('angle-c-ans').innerHTML = "Angle C is about " + AngleCAns.toFixed(2) + "°."
 }
