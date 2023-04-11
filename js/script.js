@@ -9,15 +9,15 @@
  * This function uses cosine law to solve for side c.
  */
 function calculateSideC () {
-  // input
+  // get side a, b, and angle C
   let sideA = parseFloat(document.getElementById('side-a').value);
   let sideB = parseFloat(document.getElementById('side-b').value);
   let angleC = parseFloat(document.getElementById('angle-c').value);
   
-  // process
-  let sideCAns = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2) - (2 * sideA * sideB * Math.cos(angleC)))
+  // solve for side c
+  let sideCAns = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2) - (2 * sideA * sideB * Math.cos(angleC)));
 
-  // output
+  // display to user
   document.getElementById('side-c-ans').innerHTML = "Side c is about " + sideCAns.toFixed(2) + " cm." 
 }
 
