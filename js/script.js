@@ -15,7 +15,7 @@ function calculateSideC () {
   let angleC = parseFloat(document.getElementById('angle-c').value);
   
   // process
-  let sideCAns = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2) - 2 * sideA * sideB * Math.cos(angleC))
+  let sideCAns = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2) - (2 * sideA * sideB * Math.cos(angleC)))
 
   // output
   document.getElementById('side-c-ans').innerHTML = "Side c is about " + sideCAns.toFixed(2) + " cm." 

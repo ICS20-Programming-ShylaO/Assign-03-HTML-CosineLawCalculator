@@ -5,13 +5,13 @@
 */
 
 body {
-  background-color: #f8bd9e;
+  background-color: #eae1df;
 }
 
 h5 {
-  background-color: #f6a3cf;
+  background-color: #917c78;
   text-align: center;
-  border: 2px solid #c65ec2;
+  border: 2px solid #545e56;
   color: white;
   font-weight: bold;
   padding-left: 20px;
@@ -20,8 +20,8 @@ h5 {
 }
 
 p {
-  background-color: #f6a3cf;
-  border: 2px solid #c65ec2;
+  background-color: #917c78;
+  border: 2px solid #545e56;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -32,7 +32,7 @@ p {
 }
 
 form {
-  border: 2px solid #c65ec2;
+  border: 2px solid #545e56;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -43,7 +43,7 @@ form {
 }
 
 #answers {
-  border: 2px solid #c65ec2;
+  border: 2px solid #545e56;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
